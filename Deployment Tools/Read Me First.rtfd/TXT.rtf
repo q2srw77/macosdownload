@@ -1,0 +1,119 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red7\green67\blue188;\red77\green77\blue77;}
+{\*\expandedcolortbl;;\cssrgb\c0\c35686\c78431;\csgray\c37475;}
+{\info
+{\title Deployment Tools - Read Me First}
+{\author Sophos}
+{\*\company Sophos Endpoint Engineering}
+{\*\copyright Copyright 2022 Sophos Ltd. All rights reserved.}}\margl1440\margr1440\vieww19480\viewh14080\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic e6dc22ea-b3af-4239-b194-6d00ba05f409.png \width2985 \height930 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb400\sa160\pardirnatural\partightenfactor0
+
+\f1\b\fs32 \cf2 Deployment Tools
+\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb160\sa160\pardirnatural\partightenfactor0
+
+\f0\b0 \cf3 This folder contains files useful for automated deployment of the Sophos Endpoint to macOS Big Sur and later using a management (MDM) solution. Please contact {\field{\*\fldinst{HYPERLINK "https://www.sophos.com/support"}}{\fldrslt Sophos technical support}} with additional questions.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb400\sa160\pardirnatural\partightenfactor0
+
+\f1\b\fs32 \cf2 Apple Configuration Profiles\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb160\sa160\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf3 Included are Apple Configuration Profiles that configure macOS with the necessary settings for the Sophos Endpoint to operate, eliminating the manual interaction typically required by a local administrator.\
+These profiles do not specify approvals for non-Sophos software.\
+Our deployment {\field{\*\fldinst{HYPERLINK "https://docs.sophos.com/central/Customer/help/en-us/PeopleAndDevices/ProtectDevices/EndpointProtection/MacDeployment/index.html"}}{\fldrslt documentation}} describes the steps required to automatically deploy and configure the Sophos Endpoint using these profiles with an MDM system.\
+Please refer to the {\field{\*\fldinst{HYPERLINK "https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf"}}{\fldrslt Apple Configuration Profile Reference}} for full details on the content and structure of these profiles.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb400\sa160\pardirnatural\partightenfactor0
+
+\f1\b\fs32 \cf3 Sophos Endpoint for Big Sur\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb160\sa160\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf3 This profile is suitable for using with macOS Big Sur with support for the following products:\
+\pard\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li706\fi-138\pardirnatural\partightenfactor0
+\cf3 Sophos Intercept X\
+Sophos Device Encryption\
+Sophos ZTNA\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb160\sa160\pardirnatural\partightenfactor0
+\cf3 This profile automatically:\
+\pard\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li706\fi-138\pardirnatural\partightenfactor0
+\cf3 Approves Sophos system extensions and transparent proxies\
+Approves Full Disk Access and notifications for Sophos processes\
+Configures VPN settings for Sophos ZTNA\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sl360\slmult1\sb160\sa160\pardirnatural\partightenfactor0
+\cf3 Change history:\
+\pard\tx1134\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li565\fi-1\pardirnatural\partightenfactor0
+\cf3 1.0	Initial release\
+1.1	Added versioning information to the profile\
+1.2	Separated profiles by macOS major version\
+	Added Network Extension payload for Sophos ZTNA\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb400\sa160\pardirnatural\partightenfactor0
+
+\f1\b\fs32 \cf3 Sophos Endpoint for Monterey\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb160\sa160\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf3 This profile is suitable for using with macOS Monterey with support for the following products:\
+\pard\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li706\fi-138\pardirnatural\partightenfactor0
+\cf3 Sophos Intercept X\
+Sophos Device Encryption\
+Sophos ZTNA\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb160\sa160\pardirnatural\partightenfactor0
+\cf3 This profile automatically:\
+\pard\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li706\fi-138\pardirnatural\partightenfactor0
+\cf3 Approves Sophos system extensions and transparent proxies\
+Approves Full Disk Access and notifications for Sophos processes\
+Configures VPN settings for Sophos ZTNA\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sl360\slmult1\sb160\sa160\pardirnatural\partightenfactor0
+\cf3 Change history:\
+\pard\tx1134\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li565\fi-1\pardirnatural\partightenfactor0
+\cf3 1.0	Initial release\
+1.1	Added versioning information to the profile\
+1.2	Separated profiles by macOS major version\
+	Added Network Extension payload for Sophos ZTNA\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb400\sa160\pardirnatural\partightenfactor0
+
+\f1\b\fs32 \cf3 Sophos Endpoint for Ventura\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb160\sa160\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf3 This profile is suitable for using with macOS Ventura with support for the following products:\
+\pard\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li706\fi-138\pardirnatural\partightenfactor0
+\cf3 Sophos Intercept X\
+Sophos Device Encryption\
+Sophos ZTNA\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb160\sa160\pardirnatural\partightenfactor0
+\cf3 This profile automatically:\
+\pard\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li706\fi-138\pardirnatural\partightenfactor0
+\cf3 Approves Sophos system extensions and transparent proxies\
+Approves Full Disk Access and notifications for Sophos processes\
+Configures VPN settings for Sophos ZTNA\
+Prevents user disablement of \'93Login Items\'94 for Sophos processes
+\fs32 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sl360\slmult1\sb160\sa160\pardirnatural\partightenfactor0
+
+\fs24 \cf3 Change history:\
+\pard\tx1134\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li565\fi-1\pardirnatural\partightenfactor0
+\cf3 1.0	Initial release\
+1.1	Added \'93Login Items\'94 payload\
+	Added versioning information to the profile\
+1.2	Separated profiles by macOS major version\
+	Added Network Extension payload for Sophos ZTNA\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb400\sa160\pardirnatural\partightenfactor0
+
+\f1\b\fs32 \cf2 Install Sophos Script
+\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\sb160\sa160\pardirnatural\partightenfactor0
+
+\f0\b0 \cf3 We have included a script template to automatically install the Sophos Endpoint software. You will need to provide the URL to the location where the installation package can be downloaded. This script is {\field{\*\fldinst{HYPERLINK "https://docs.sophos.com/central/Customer/help/en-us/PeopleAndDevices/ProtectDevices/EndpointProtection/MacDeployment/index.html"}}{\fldrslt referenced in our documentation}}.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li228\pardirnatural\partightenfactor0
+\cf3 \
+\
+-end-\
+}
